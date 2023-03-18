@@ -58,6 +58,47 @@ void firstLevel()
 {
 	// Game level
 	cout << "Bitwise AND ""&""" << endl;
+
+	//Bitwise "AND" truth table 
+	cout << char(218) << char(196) << char(196) << char(196) << char(194);
+	cout << char(196) << char(196) << char(196) << char(194) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(191) << endl;
+
+	cout << char(179) << " A " << char(179) << " B " << char(179) << " RESULT " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 0 " << char(179) << " 0 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 0 " << char(179) << " 1 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 1 " << char(179) << " 0 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 1 " << char(179) << " 1 " << char(179) << "   1    " << char(179) << endl;
+
+	cout << char(192) << char(196) << char(196) << char(196) << char(193);
+	cout << char(196) << char(196) << char(196) << char(193) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(217) << endl;
 }
 
 void secondLevel()
@@ -100,7 +141,7 @@ void ninethLevel()
 	// Game level
 }
 
-void tenthtLevel()
+void tenthLevel()
 {
 	// Game level
 }
@@ -138,24 +179,71 @@ void game()
 		{
 			switch (selectedLevel)
 			{
-				// Start level
+				// First level
 			case 0:
 				system("CLS");
-				game();
+				firstLevel();
 				break;
 
-				// Rules
+				// Second level
 			case 1:
 				system("CLS");
-				cout << "Rules";
+				secondLevel();
 				break;
 
-				// Exit
+				// Third level
 			case 2:
+				system("CLS");
+				thirdLevel();
+				break;
+
+				// Fourth level
+			case 3:
+				system("CLS");
+				thirdLevel();
+				break;
+
+				// Fifth level
+			case 4:
+				system("CLS");
+				fifthLevel();
+				break;
+
+				// Sixth level
+			case 5:
+				system("CLS");
+				sixthLevel();
+				break;
+
+				// Seventh level
+			case 6:
+				system("CLS");
+				seventhLevel();
+				break;
+
+				// Eigth level
+			case 7:
+				system("CLS");
+				eighthLevel();
+				break;
+
+				// Nineth level
+			case 8:
+				system("CLS");
+				ninethLevel();
+				break;
+
+				// Tenth level
+			case 9:
+				system("CLS");
+				tenthLevel();
+				break;
+
+				/*case 11:
 				exitStatement = false;
 				system("CLS");
 				cout << "Press any key to exit";
-				break;
+				break;*/
 
 			default:
 				break;
