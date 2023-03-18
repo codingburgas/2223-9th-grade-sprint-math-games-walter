@@ -54,12 +54,9 @@ void printGameLevels(int selectedLevel)
 	}
 }
 
-void firstLevel()
+// Print bitwise "AND" truth table 
+void logicAndTruthTable()
 {
-	// Game level
-	cout << "Bitwise AND &" << endl;
-
-	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
 	cout << char(196) << char(196) << char(196) << char(194) << char(196);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196);
@@ -101,12 +98,9 @@ void firstLevel()
 	cout << char(196) << char(196) << char(217) << endl;
 }
 
-void secondLevel()
+// Print bitwise "OR" truth table 
+void logicOrTruthTable()
 {
-	// Game level
-	cout << "Bitwise OR |" << endl;
-
-	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
 	cout << char(196) << char(196) << char(196) << char(194) << char(196);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196);
@@ -148,12 +142,9 @@ void secondLevel()
 	cout << char(196) << char(196) << char(217) << endl;
 }
 
-void thirdLevel()
+// Print bitwise "XOR" truth table 
+void logicXorTruthTable()
 {
-	// Game level
-	cout << "Bitwise XOR ^" << endl;
-
-	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
 	cout << char(196) << char(196) << char(196) << char(194) << char(196);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196);
@@ -195,12 +186,9 @@ void thirdLevel()
 	cout << char(196) << char(196) << char(217) << endl;
 }
 
-void fourthLevel()
+// Print bitwise "NOT" truth table 
+void logicNotTruthTable()
 {
-	// Game level
-	cout << "Bitwise NOT ~" << endl;
-
-	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196);
 	cout << char(196) << char(196) << char(196) << char(191) << endl;
@@ -222,6 +210,38 @@ void fourthLevel()
 	cout << char(192) << char(196) << char(196) << char(196) << char(193);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196);
 	cout << char(196) << char(196) << char(196) << char(217) << endl;
+}
+
+void firstLevel()
+{
+	// Game level
+	cout << "Bitwise AND &" << endl;
+
+	logicAndTruthTable();
+}
+
+void secondLevel()
+{
+	// Game level
+	cout << "Bitwise OR |" << endl;
+
+	logicOrTruthTable();
+}
+
+void thirdLevel()
+{
+	// Game level
+	cout << "Bitwise XOR ^" << endl;
+
+	logicXorTruthTable();
+}
+
+void fourthLevel()
+{
+	// Game level
+	cout << "Bitwise NOT ~" << endl;
+
+	logicNotTruthTable();
 }
 
 void fifthLevel()
