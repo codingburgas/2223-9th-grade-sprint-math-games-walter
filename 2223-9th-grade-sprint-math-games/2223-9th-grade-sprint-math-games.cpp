@@ -57,7 +57,7 @@ void printGameLevels(int selectedLevel)
 void firstLevel()
 {
 	// Game level
-	cout << "Bitwise AND ""&""" << endl;
+	cout << "Bitwise AND &" << endl;
 
 	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
@@ -104,7 +104,7 @@ void firstLevel()
 void secondLevel()
 {
 	// Game level
-	cout << "Bitwise OR ""|""" << endl;
+	cout << "Bitwise OR |" << endl;
 
 	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
@@ -151,7 +151,7 @@ void secondLevel()
 void thirdLevel()
 {
 	// Game level
-	cout << "Bitwise XOR ""^""" << endl;
+	cout << "Bitwise XOR ^" << endl;
 
 	//Bitwise "AND" truth table 
 	cout << char(218) << char(196) << char(196) << char(196) << char(194);
@@ -198,6 +198,30 @@ void thirdLevel()
 void fourthLevel()
 {
 	// Game level
+	cout << "Bitwise NOT ~" << endl;
+
+	//Bitwise "AND" truth table 
+	cout << char(218) << char(196) << char(196) << char(196) << char(194);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(191) << endl;
+
+	cout << char(179) << " A " << char(179) << " RESULT " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 0 " << char(179) << "   1    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 1 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(192) << char(196) << char(196) << char(196) << char(193);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(217) << endl;
 }
 
 void fifthLevel()
@@ -284,7 +308,7 @@ void game()
 				// Fourth level
 			case 3:
 				system("CLS");
-				thirdLevel();
+				fourthLevel();
 				break;
 
 				// Fifth level
