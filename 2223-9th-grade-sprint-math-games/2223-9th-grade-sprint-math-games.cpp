@@ -151,6 +151,48 @@ void secondLevel()
 void thirdLevel()
 {
 	// Game level
+	cout << "Bitwise XOR ""^""" << endl;
+
+	//Bitwise "AND" truth table 
+	cout << char(218) << char(196) << char(196) << char(196) << char(194);
+	cout << char(196) << char(196) << char(196) << char(194) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(191) << endl;
+
+	cout << char(179) << " A " << char(179) << " B " << char(179) << " RESULT " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 0 " << char(179) << " 0 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 0 " << char(179) << " 1 " << char(179) << "   1    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 1 " << char(179) << " 0 " << char(179) << "   1    " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(197);
+	cout << char(196) << char(196) << char(196) << char(197) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(180) << endl;
+
+	cout << char(179) << " 1 " << char(179) << " 1 " << char(179) << "   0    " << char(179) << endl;
+
+	cout << char(192) << char(196) << char(196) << char(196) << char(193);
+	cout << char(196) << char(196) << char(196) << char(193) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(217) << endl;
 }
 
 void fourthLevel()
