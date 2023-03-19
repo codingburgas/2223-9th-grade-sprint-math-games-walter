@@ -240,6 +240,7 @@ void firstLevel()
 		// Moving up through the levels
 		if (selectedPage != 0 && pressedKey == (char)75)
 		{
+			system("CLS");
 			selectedPage--;
 			logicAndTruthTable();
 		}
@@ -247,12 +248,38 @@ void firstLevel()
 		// Moving down through the levels
 		if (selectedPage != 1 && pressedKey == (char)77)
 		{
+			system("CLS");
 			selectedPage++;
 			logicAndExamples();
 		}
 
 	}
 	system("CLS");
+}
+
+void printLesson()
+{
+	cout << " _    ___ ___ ___  ___  _  _" << endl;
+	cout << "| |  | __/ __/ __|/ _ \\| \\| |" << endl;
+	cout << "| |__| _|\\__ \\__ \\ (_) | .` |" << endl;
+	cout << "|____|___|___/___/\\___/|_|\\_|" << endl;
+}
+
+void printTeamLogo()
+{
+
+	cout << "__      __ _    _   _____  ___  ___ " << endl;
+	cout << "\\ \\    / //_\\  | | |_   _|| __|| _ \\" << endl;
+	cout << " \\ \\/\\/ // _ \\ | |__ | |  | _| |   /" << endl;
+	cout << "  \\_/\\_//_/ \\_\\|____||_|  |___||_|_\\" << endl;
+}
+
+void printGame()
+{
+	cout << "  ___    _    __  __  ___ " << endl;
+	cout << " / __|  /_\\  |  \\/  || __|" << endl;
+	cout << "| (_ | / _ \\ | |\\/| || _| " << endl;
+	cout << " \\___|/_/ \\_\\|_|  |_||___|" << endl;
 }
 
 void secondLevel()
