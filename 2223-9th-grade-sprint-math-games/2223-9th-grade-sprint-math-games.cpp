@@ -11,7 +11,6 @@ using namespace std;
 // Left - 75
 // Right - 77
 
-
 // Output coordinates manipulation function
 void outputPosition(int x, int y)
 {
@@ -54,7 +53,7 @@ void printGameLevels(int selectedLevel)
 	}
 }
 
-void printLesson()
+void printLessonMessage()
 {
 	cout << " _    ___ ___ ___  ___  _  _" << endl;
 	cout << "| |  | __/ __/ __|/ _ \\| \\| |" << endl;
@@ -62,7 +61,7 @@ void printLesson()
 	cout << "|____|___|___/___/\\___/|_|\\_|" << endl;
 }
 
-void printTeamLogo()
+void printTeamLogoMessage()
 {
 
 	cout << "__      __ _    _   _____  ___  ___ " << endl;
@@ -71,7 +70,7 @@ void printTeamLogo()
 	cout << "  \\_/\\_//_/ \\_\\|____||_|  |___||_|_\\" << endl;
 }
 
-void printGame()
+void printGameMessage()
 {
 	cout << "  ___    _    __  __  ___ " << endl;
 	cout << " / __|  /_\\  |  \\/  || __|" << endl;
@@ -79,7 +78,7 @@ void printGame()
 	cout << " \\___|/_/ \\_\\|_|  |_||___|" << endl;
 }
 
-void printTest()
+void printTestMessage()
 {
 	cout << " _____  ___  ___  _____ " << endl;
 	cout << "|_   _|| __|/ __||_   _|" << endl;
@@ -87,7 +86,7 @@ void printTest()
 	cout << "  |_|  |___||___/  |_|  " << endl;
 }
 
-void printCongratulations()
+void printCongratulationsMessage()
 {
 	cout << "  ___  ___   _  _   ___  ___    _  _____  ___  " << endl;
 	cout << " / __|/ _ \\ | \\| | / __|| _ \\  /_\\|_   _|/ __| " << endl;
@@ -101,6 +100,14 @@ void printCongratulations()
 	cout << "                 |_ _||_   _|                  " << endl;
 	cout << "                  | |   | |                    " << endl;
 	cout << "                 |___|  |_|                    " << endl;
+}
+
+void printTryAgainMessage()
+{
+	cout << " _____  ___ __   __    _    ___    _    ___  _  _ " << endl;
+	cout << "|_   _|| _ \\\\ \\\ / /   /_\\  / __|  /_\\  |_ _|| \\| |" << endl;
+	cout << "  | |  |   / \\ V /   / _ \\| (_ | / _ \\  | | | .` |" << endl;
+	cout << "  |_|  |_|_\\  |_|   /_/ \\_\\\\___|/_/ \\_\\|___||_|\\_|" << endl;
 }
 
 // Print bitwise "AND" truth table 
@@ -282,6 +289,7 @@ void logicAndExamples()
 void firstLevelTest(bool exitStatement)
 {
 	string answer;
+	char pressedKey = ' ';
 
 	cout << "A = 10 = 1 0 1 0 (Binary)" << endl;
 	cout << "B =  7 = 0 1 1 1 (Binary)" << endl;
@@ -308,12 +316,13 @@ void firstLevelTest(bool exitStatement)
 
 		if (answer == "0010" || answer == "10" || answer == "    1 0" || answer == "0 0 1 0")
 		{
-			printCongratulations();
+			system("CLS");
+			printCongratulationsMessage();
 
 			exitStatement = false;
 
-			system("CLS");
 			cout << "Press any key to exit";
+			pressedKey = _getch();
 		}
 	}
 }
@@ -447,7 +456,6 @@ void game()
 			case 0:
 				system("CLS");
 				firstLevel();
-				break;
 
 				// Second level
 			case 1:
@@ -597,7 +605,7 @@ void mainMenu(string menuOptions[])
 int main()
 {
 	string name;
-	printCongratulations();
+
 	cout << "Hello, please enter your name here: ";
 	cin >> name;
 
