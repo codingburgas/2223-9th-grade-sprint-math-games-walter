@@ -54,6 +54,55 @@ void printGameLevels(int selectedLevel)
 	}
 }
 
+void printLesson()
+{
+	cout << " _    ___ ___ ___  ___  _  _" << endl;
+	cout << "| |  | __/ __/ __|/ _ \\| \\| |" << endl;
+	cout << "| |__| _|\\__ \\__ \\ (_) | .` |" << endl;
+	cout << "|____|___|___/___/\\___/|_|\\_|" << endl;
+}
+
+void printTeamLogo()
+{
+
+	cout << "__      __ _    _   _____  ___  ___ " << endl;
+	cout << "\\ \\    / //_\\  | | |_   _|| __|| _ \\" << endl;
+	cout << " \\ \\/\\/ // _ \\ | |__ | |  | _| |   /" << endl;
+	cout << "  \\_/\\_//_/ \\_\\|____||_|  |___||_|_\\" << endl;
+}
+
+void printGame()
+{
+	cout << "  ___    _    __  __  ___ " << endl;
+	cout << " / __|  /_\\  |  \\/  || __|" << endl;
+	cout << "| (_ | / _ \\ | |\\/| || _| " << endl;
+	cout << " \\___|/_/ \\_\\|_|  |_||___|" << endl;
+}
+
+void printTest()
+{
+	cout << " _____  ___  ___  _____ " << endl;
+	cout << "|_   _|| __|/ __||_   _|" << endl;
+	cout << "  | |  | _| \\__ \\  | |  " << endl;
+	cout << "  |_|  |___||___/  |_|  " << endl;
+}
+
+void printCongratulations()
+{
+	cout << "  ___  ___   _  _   ___  ___    _  _____  ___  " << endl;
+	cout << " / __|/ _ \\ | \\| | / __|| _ \\  /_\\|_   _|/ __| " << endl;
+	cout << "| (__| (_) || .` || (_ ||   / / _ \\ | |  \\__ \\" << endl;
+	cout << " \\___|\\___/ |_|\\_| \\___||_|_\\/_/ \\_\\|_|  |___/ " << endl;
+	cout << "   __   __ ___   _   _      ___  ___  ___      " << endl;
+	cout << "   \\ \\ / // _ \\ | | | |    |   \\|_ _||   \\     " << endl;
+	cout << "    \\ V /| (_) || |_| |    | |) || | | |) |    " << endl;
+	cout << "     |_|  \\___/  \\___/     |___/|___||___/     " << endl;
+	cout << "                  ___  _____                   " << endl;
+	cout << "                 |_ _||_   _|                  " << endl;
+	cout << "                  | |   | |                    " << endl;
+	cout << "                 |___|  |_|                    " << endl;
+}
+
 // Print bitwise "AND" truth table 
 void logicAndTruthTable()
 {
@@ -230,6 +279,45 @@ void logicAndExamples()
 	cout << char(196) << char(196) << char(196) << endl;
 }
 
+void firstLevelTest(bool exitStatement)
+{
+	string answer;
+
+	cout << "A = 10 = 1 0 1 0 (Binary)" << endl;
+	cout << "B =  7 = 0 1 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  & B = " << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	while (exitStatement)
+	{
+		outputPosition(9, 3);
+		cout << "           ";
+
+		outputPosition(9, 3);
+		getline(cin, answer);
+
+		if (answer == "0010" || answer == "10" || answer == "    1 0" || answer == "0 0 1 0")
+		{
+			printCongratulations();
+
+			exitStatement = false;
+
+			system("CLS");
+			cout << "Press any key to exit";
+		}
+	}
+}
+
 void firstLevel()
 {
 	// Game level
@@ -239,6 +327,7 @@ void firstLevel()
 
 	char pressedKey = ' ';
 	int selectedPage = 0; // By default you are on the first page
+	bool exitStatement = true;
 
 	while (pressedKey != '\r')
 	{
@@ -264,31 +353,7 @@ void firstLevel()
 
 	}
 	system("CLS");
-}
-
-void printLesson()
-{
-	cout << " _    ___ ___ ___  ___  _  _" << endl;
-	cout << "| |  | __/ __/ __|/ _ \\| \\| |" << endl;
-	cout << "| |__| _|\\__ \\__ \\ (_) | .` |" << endl;
-	cout << "|____|___|___/___/\\___/|_|\\_|" << endl;
-}
-
-void printTeamLogo()
-{
-
-	cout << "__      __ _    _   _____  ___  ___ " << endl;
-	cout << "\\ \\    / //_\\  | | |_   _|| __|| _ \\" << endl;
-	cout << " \\ \\/\\/ // _ \\ | |__ | |  | _| |   /" << endl;
-	cout << "  \\_/\\_//_/ \\_\\|____||_|  |___||_|_\\" << endl;
-}
-
-void printGame()
-{
-	cout << "  ___    _    __  __  ___ " << endl;
-	cout << " / __|  /_\\  |  \\/  || __|" << endl;
-	cout << "| (_ | / _ \\ | |\\/| || _| " << endl;
-	cout << " \\___|/_/ \\_\\|_|  |_||___|" << endl;
+	firstLevelTest(exitStatement);
 }
 
 void secondLevel()
@@ -532,12 +597,14 @@ void mainMenu(string menuOptions[])
 int main()
 {
 	string name;
+	printCongratulations();
 	cout << "Hello, please enter your name here: ";
 	cin >> name;
 
 	system("CLS");
 
-	string mainMenuOptions[] = { "Start", "Rules", "Exit" }; // String array with all the main menu options
+	// String array with all the main menu options
+	string mainMenuOptions[] = { "Start", "Rules", "Exit" };
 
 	mainMenu(mainMenuOptions);
 }
