@@ -214,13 +214,20 @@ void logicNotTruthTable()
 
 void logicAndExamples()
 {
-	cout << "A = 10 => 1010 (Binary)" << endl;
-	cout << "B = 7 => 111 (Binary)" << endl;
-	cout << "A & B = " << endl;
-	cout << "& 1010" << endl;
-	cout << "  0111" << endl;
-	cout << "= 0010" << endl;
-	cout << "= 2 (Decimal)" << endl;
+	cout << "A = 10 = 1 0 1 0 (Binary)" << endl;
+	cout << "B = 11 = 1 0 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  & B = 1 0 1 0 (Decimal)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
 }
 
 void firstLevel()
@@ -242,6 +249,7 @@ void firstLevel()
 		{
 			system("CLS");
 			selectedPage--;
+			outputPosition(0, 0);
 			logicAndTruthTable();
 		}
 
@@ -250,6 +258,7 @@ void firstLevel()
 		{
 			system("CLS");
 			selectedPage++;
+			outputPosition(0, 0);
 			logicAndExamples();
 		}
 
