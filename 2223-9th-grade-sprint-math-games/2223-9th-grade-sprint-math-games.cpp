@@ -212,12 +212,47 @@ void logicNotTruthTable()
 	cout << char(196) << char(196) << char(196) << char(217) << endl;
 }
 
+void logicAndExamples()
+{
+	cout << "A = 10 => 1010 (Binary)" << endl;
+	cout << "B = 7 => 111 (Binary)" << endl;
+	cout << "A & B = " << endl;
+	cout << "& 1010" << endl;
+	cout << "  0111" << endl;
+	cout << "= 0010" << endl;
+	cout << "= 2 (Decimal)" << endl;
+}
+
 void firstLevel()
 {
 	// Game level
 	cout << "Bitwise AND &" << endl;
 
 	logicAndTruthTable();
+
+	char pressedKey = ' ';
+	int selectedPage = 0; // By default you are on the first page
+
+	while (pressedKey != '\r')
+	{
+		pressedKey = _getch();
+
+		// Moving up through the levels
+		if (selectedPage != 0 && pressedKey == (char)75)
+		{
+			selectedPage--;
+			logicAndTruthTable();
+		}
+
+		// Moving down through the levels
+		if (selectedPage != 1 && pressedKey == (char)77)
+		{
+			selectedPage++;
+			logicAndExamples();
+		}
+
+	}
+	system("CLS");
 }
 
 void secondLevel()
