@@ -1,5 +1,5 @@
 <p align = "center">
-  <img src="https://github.com/ADAtanasov21/walter/2223-9th-grade-sprint-math-games-walter/Documenation/Logo/logo.png" width="300" text-align="center">
+  <img src="https://github.com/2223-9th-grade-sprint-math-games-walter/Documenation/Logo/logo.png" width="300" text-align="center">
 </p>
 
 <hr>
@@ -21,7 +21,7 @@ Git
 <p>1. Clone the repo</p>
 
 ```
-https://github.com/ADAtanasov21/Beans.git
+https://github.com/ADAtanasov21/2223-9th-grade-sprint-math-games-walter.git
 ```
 <p>2. Open the .sln file</p>
 <p>3. Run the project!</p>
