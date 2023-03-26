@@ -110,6 +110,162 @@ void printTryAgainMessage()
 	cout << "  |_|  |_|_\\  |_|   /_/ \\_\\\\___|/_/ \\_\\|___||_|\\_|" << endl;
 }
 
+void printGameBoard()
+{
+	cout << char(218) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(191) << endl;
+
+	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << " CASIO FB-14P3                   " << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << " PACKAPO 23K89          " << char(219) << " " << char(219) << " " << char(219);
+	cout << " " << char(219) << " " << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "                                        " << "  " << char(179) << endl;
+
+	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << "  " << char(179) << endl;
+
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
+	cout << char(219) << char(219) << "  " << char(179) << endl;
+
+	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
+	cout << char(219) << char(219) << char(219) << char(219) << "  " << char(179) << endl;
+
+	cout << char(179) << " /" << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << "\\" << " " << char(179) << endl;
+	cout << char(179) << "                                        " << "  " << char(179) << endl;
+
+	cout << char(195) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(180) << endl;
+
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+	cout << char(179) << "                                          " << char(179) << endl;
+
+	cout << char(192) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(217) << endl;
+
+}
+
+void printKeyboard()
+{
+	int i = 7;
+	int j = 4;
+
+	outputPosition(j, i + 0);
+	cout << " ____   ____   ____     ____   ____" << endl;
+	outputPosition(j, i + 1);
+	cout << "||MR|| ||M-|| ||M+||   ||CE|| ||ON||" << endl;
+	outputPosition(j, i + 2);
+	cout << "||__|| ||__|| ||__||   ||__|| ||__||" << endl;
+	outputPosition(j, i + 3);
+	cout << "|/__\\| |/__\\| |/__\\|   |/__\\| |/__\\|" << endl;
+	outputPosition(j, i + 4);
+	cout << " ____   ____   ____     ____   ____" << endl;
+	outputPosition(j, i + 5);
+	cout << "|| 7|| || 8|| || 9||   || %|| || &||" << endl;
+	outputPosition(j, i + 6);
+	cout << "||__|| ||__|| ||__||   ||__|| ||__||" << endl;
+	outputPosition(j, i + 7);
+	cout << "|/__\\| |/__\\| |/__\\|   |/__\\| |/__\\|" << endl;
+	outputPosition(j, i + 8);
+	cout << " ____   ____   ____     ____   ____" << endl;
+	outputPosition(j, i + 9);
+	cout << "|| 4|| || 5|| || 6||   || X|| || /||" << endl;
+	outputPosition(j, i + 10);
+	cout << "||__|| ||__|| ||__||   ||__|| ||__||" << endl;
+	outputPosition(j, i + 11);
+	cout << "|/__\\| |/__\\| |/__\\|   |/__\\| |/__\\|" << endl;
+	outputPosition(j, i + 12);
+	cout << " ____   ____   ____     ____   ____" << endl;
+	outputPosition(j, i + 13);
+	cout << "|| 1|| || 2|| || 3||   || +|| || -||" << endl;
+	outputPosition(j, i + 14);
+	cout << "||__|| ||__|| ||__||   ||__|| ||__||" << endl;
+	outputPosition(j, i + 15);
+	cout << "|/__\\| |/__\\| |/__\\|   |/__\\| |/__\\|" << endl;
+	outputPosition(j, i + 16);
+	cout << " ____   ____   ____     ____   ____" << endl;
+	outputPosition(j, i + 17);
+	cout << "|| 0|| ||00|| || .||   ||MU|| || =||" << endl;
+	outputPosition(j, i + 18);
+	cout << "||__|| ||__|| ||__||   ||__|| ||__||" << endl;
+	outputPosition(j, i + 19);
+	cout << "|/__\\| |/__\\| |/__\\|   |/__\\| |/__\\|" << endl;
+}
+
 // Print bitwise "AND" truth table 
 void logicAndTruthTable()
 {
