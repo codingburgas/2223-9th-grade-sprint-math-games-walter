@@ -286,6 +286,59 @@ void logicAndExamples()
 	cout << char(196) << char(196) << char(196) << endl;
 }
 
+void logicOrExamples()
+{
+	cout << "A = 10 = 1 0 1 0 (Binary)" << endl;
+	cout << "B =  3 = 0 0 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  & B = 1 0 1 1 (Decimal)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+}
+
+void logicXorExamples()
+{
+	cout << "A = 14 = 1 1 1 0 (Binary)" << endl;
+	cout << "B =  7 = 0 1 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  & B = 1 0 0 1 (Decimal)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+}
+
+void logicNotExamples()
+{
+	cout << "A = 15 = 1 1 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "  ~A   = 0 0 0 0 (Decimal)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+}
+
 void firstLevelTest(bool exitStatement)
 {
 	string answer;
@@ -323,6 +376,129 @@ void firstLevelTest(bool exitStatement)
 
 			cout << "Press any key to exit";
 			pressedKey = _getch();
+			system("CLS");
+		}
+	}
+}
+
+void secondLevelTest(bool exitStatement)
+{
+	string answer;
+	char pressedKey = ' ';
+
+	cout << "A = 14 = 1 1 1 0 (Binary)" << endl;
+	cout << "B =  3 = 0 0 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  | B = " << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	while (exitStatement)
+	{
+		outputPosition(9, 3);
+		cout << "           ";
+
+		outputPosition(9, 3);
+		getline(cin, answer);
+
+		if (answer == "1111" || answer == "1 1 1 1")
+		{
+			system("CLS");
+			printCongratulationsMessage();
+
+			exitStatement = false;
+
+			cout << "Press any key to exit";
+			pressedKey = _getch();
+			system("CLS");
+		}
+	}
+}
+
+void thirdLevelTest(bool exitStatement)
+{
+	string answer;
+	char pressedKey = ' ';
+
+	cout << "A =  6 = 0 1 1 0 (Binary)" << endl;
+	cout << "B = 11 = 1 0 1 1 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "A  ^ B = " << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	while (exitStatement)
+	{
+		outputPosition(9, 3);
+		cout << "           ";
+
+		outputPosition(9, 3);
+		getline(cin, answer);
+
+		if (answer == "1101" || answer == "1 1 0 1")
+		{
+			system("CLS");
+			printCongratulationsMessage();
+
+			exitStatement = false;
+
+			cout << "Press any key to exit";
+			pressedKey = _getch();
+			system("CLS");
+		}
+	}
+}
+
+void fourthLevelTest(bool exitStatement)
+{
+	string answer;
+	char pressedKey = ' ';
+
+	cout << "A = 10 = 1 0 1 0 (Binary)" << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	cout << "  ~A   = " << endl;
+
+	cout << "         " << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << char(196) << char(196);
+	cout << char(196) << char(196) << char(196) << endl;
+
+	while (exitStatement)
+	{
+		outputPosition(9, 2);
+		getline(cin, answer);
+
+		if (answer == "0101" || answer == "101" || answer == "  1 0 1" || answer == "0 1 0 1")
+		{
+			system("CLS");
+			printCongratulationsMessage();
+
+			exitStatement = false;
+
+			cout << "Press any key to exit";
+			pressedKey = _getch();
+			system("CLS");
 		}
 	}
 }
@@ -359,7 +535,6 @@ void firstLevel()
 			outputPosition(0, 0);
 			logicAndExamples();
 		}
-
 	}
 	system("CLS");
 	firstLevelTest(exitStatement);
@@ -371,6 +546,35 @@ void secondLevel()
 	cout << "Bitwise OR |" << endl;
 
 	logicOrTruthTable();
+
+	char pressedKey = ' ';
+	int selectedPage = 0; // By default you are on the first page
+	bool exitStatement = true;
+
+	while (pressedKey != '\r')
+	{
+		pressedKey = _getch();
+
+		// Moving up through the levels
+		if (selectedPage != 0 && pressedKey == (char)75)
+		{
+			system("CLS");
+			selectedPage--;
+			outputPosition(0, 0);
+			logicOrTruthTable();
+		}
+
+		// Moving down through the levels
+		if (selectedPage != 1 && pressedKey == (char)77)
+		{
+			system("CLS");
+			selectedPage++;
+			outputPosition(0, 0);
+			logicOrExamples();
+		}
+	}
+	system("CLS");
+	secondLevelTest(exitStatement);
 }
 
 void thirdLevel()
@@ -379,6 +583,35 @@ void thirdLevel()
 	cout << "Bitwise XOR ^" << endl;
 
 	logicXorTruthTable();
+
+	char pressedKey = ' ';
+	int selectedPage = 0; // By default you are on the first page
+	bool exitStatement = true;
+
+	while (pressedKey != '\r')
+	{
+		pressedKey = _getch();
+
+		// Moving up through the levels
+		if (selectedPage != 0 && pressedKey == (char)75)
+		{
+			system("CLS");
+			selectedPage--;
+			outputPosition(0, 0);
+			logicXorTruthTable();
+		}
+
+		// Moving down through the levels
+		if (selectedPage != 1 && pressedKey == (char)77)
+		{
+			system("CLS");
+			selectedPage++;
+			outputPosition(0, 0);
+			logicXorExamples();
+		}
+	}
+	system("CLS");
+	thirdLevelTest(exitStatement);
 }
 
 void fourthLevel()
@@ -387,6 +620,35 @@ void fourthLevel()
 	cout << "Bitwise NOT ~" << endl;
 
 	logicNotTruthTable();
+
+	char pressedKey = ' ';
+	int selectedPage = 0; // By default you are on the first page
+	bool exitStatement = true;
+
+	while (pressedKey != '\r')
+	{
+		pressedKey = _getch();
+
+		// Moving up through the levels
+		if (selectedPage != 0 && pressedKey == (char)75)
+		{
+			system("CLS");
+			selectedPage--;
+			outputPosition(0, 0);
+			logicNotTruthTable();
+		}
+
+		// Moving down through the levels
+		if (selectedPage != 1 && pressedKey == (char)77)
+		{
+			system("CLS");
+			selectedPage++;
+			outputPosition(0, 0);
+			logicNotExamples();
+		}
+	}
+	system("CLS");
+	fourthLevelTest(exitStatement);
 }
 
 void fifthLevel()
@@ -425,12 +687,11 @@ void game()
 	int selectedLevel = 0;
 	char pressedKey = ' ';
 
-	printGameLevels(selectedLevel);
-
 	bool exitStatement = true;
 
 	while (exitStatement)
 	{
+		printGameLevels(selectedLevel);
 		pressedKey = _getch();
 
 		// Moving up through the levels
@@ -456,6 +717,7 @@ void game()
 			case 0:
 				system("CLS");
 				firstLevel();
+				break;
 
 				// Second level
 			case 1:
