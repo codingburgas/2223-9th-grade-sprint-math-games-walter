@@ -42,5 +42,5 @@ https://github.com/codingburgas/2223-9th-grade-sprint-math-games-walter
 #  🏆 The Team
 <p><a href="https://github.com/ADAtanasov21">Atanas Atanasov</a> - Scrum Trainer</p>
 <p><a href="https://github.com/ISDelchilov21">Ivan Delchilov</a> - Back-end Developer</p>
-<p><a href="https://github.com/NZStoyanov21">Nikolai Stoqnov</a> - Front-end Developer</p>
+<p><a href="https://github.com/NZStoyanov21">Nikolay Stoyanov</a> - Front-end Developer</p>
 <p><a href="https://github.com/YZIlcheva21">Yana Ilcheva</a> - QA Engineer</p>
