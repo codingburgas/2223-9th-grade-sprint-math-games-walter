@@ -112,6 +112,7 @@ void printTryAgainMessage()
 
 void printGameBoard()
 {
+	outputPosition(0, 0);
 	cout << char(218) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
 	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
@@ -120,13 +121,19 @@ void printGameBoard()
 	cout << char(196) << char(196) << char(196) << char(196) << char(196) << char(196) << char(196);
 	cout << char(196) << char(191) << endl;
 
+	outputPosition(0, 1);
 	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219);
 	cout << " CASIO FB-14P3                   " << "  " << char(179) << endl;
+
+	outputPosition(0, 2);
 	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219);
 	cout << " PACKAPO 23K89          " << char(219) << " " << char(219) << " " << char(219);
 	cout << " " << char(219) << " " << char(219) << "  " << char(179) << endl;
+
+	outputPosition(0, 3);
 	cout << char(179) << "                                        " << "  " << char(179) << endl;
 
+	outputPosition(0, 4);
 	cout << char(179) << "  " << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
 	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
 	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
@@ -134,34 +141,49 @@ void printGameBoard()
 	cout << char(219) << char(219) << char(219) << char(219) << char(219) << char(219) << char(219);
 	cout << char(219) << char(219) << char(219) << char(219) << "  " << char(179) << endl;
 
+	outputPosition(0, 5);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 6);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 7);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 8);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 9);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 10);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 11);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 12);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 13);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 14);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 15);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 16);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 17);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 18);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
+	outputPosition(0, 19);
 	cout << char(179) << "  " << char(219) << char(219) << "                                  ";
 	cout << char(219) << char(219) << "  " << char(179) << endl;
 
@@ -1023,7 +1045,9 @@ void mainMenu(string menuOptions[])
 int main()
 {
 	string name;
-
+	printGameBoard();
+	printKeyboard();
+	outputPosition(4, 0);
 	cout << "Hello, please enter your name here: ";
 	cin >> name;
 
