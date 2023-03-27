@@ -128,6 +128,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="2223-9th-grade-sprint-math-games.cpp" />
+    <ClCompile Include="BitwiseExamples.cpp" />
+    <ClCompile Include="Drawings.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameLevels.cpp" />
+    <ClCompile Include="Menus.cpp" />
+    <ClCompile Include="Output.cpp" />
+    <ClCompile Include="Rules.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BitwiseExamples.h" />
+    <ClInclude Include="Drawings.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameLevels.h" />
+    <ClInclude Include="Menus.h" />
+    <ClInclude Include="Output.h" />
+    <ClInclude Include="Rules.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
