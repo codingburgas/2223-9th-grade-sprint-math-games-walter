@@ -32,6 +32,67 @@ void color(int color)
 	}
 }
 
+void printCertificate(string name)
+{
+	outputPosition(2, 2);
+	cout << char(218);
+	for (int i = 0; i < 60; i++)
+	{
+		cout << char(196);
+	}
+	cout << char(191);
+
+	for (int i = 0; i < 18; i++)
+	{
+		outputPosition(2, 3 + i);
+		cout << char(179);
+		for (int i = 0; i < 60; i++)
+		{
+			cout << " ";
+		}
+		cout << char(179);
+	}
+
+	outputPosition(2, 21);
+	cout << char(192);
+	for (int i = 0; i < 60; i++)
+	{
+		cout << char(196);
+	}
+	cout << char(217);
+
+	outputPosition(13, 3);
+	cout << "This is your certificate for compleating";
+
+	outputPosition(16, 4);
+	cout << "our course about bitwise operators!";
+
+	outputPosition(20, 6);
+	cout << "You can screenshot it now!";
+
+	outputPosition(9, 9);
+	cout << "Congratulations " << name << " for compleating out course!";
+
+	outputPosition(5, 13);
+	cout << "Bitwise operators OOD";
+
+	outputPosition(5, 14);
+	cout << "Yana Ilcheva";
+
+	outputPosition(5, 16);
+	cout << "Signature: BO-OOD";
+
+	outputPosition(33, 16);
+	cout << "Your signature (here): ";
+
+	char pressedKey = ' ';
+
+	outputPosition(20, 19);
+	cout << "  Press any key to exit!";
+
+	pressedKey = _getch();
+}
+
 void printGameBoard()
 {
 	outputPosition(0, 0);
@@ -1051,7 +1112,7 @@ void thirdLevel()
 	thirdLevelTest(exitStatement);
 }
 
-void fourthLevel()
+void fourthLevel(string name)
 {
 	printGameBoard();
 	printKeyboard();
@@ -1084,36 +1145,8 @@ void fourthLevel()
 	}
 	clearGameScreen();
 	fourthLevelTest(exitStatement);
-}
-
-void fifthLevel()
-{
-	// Game level
-}
-
-void sixthLevel()
-{
-	// Game level
-}
-
-void seventhLevel()
-{
-	// Game level
-}
-
-void eighthLevel()
-{
-	// Game level
-}
-
-void ninethLevel()
-{
-	// Game level
-}
-
-void tenthLevel()
-{
-	// Game level
+	system("CLS");
+	printCertificate(name);
 }
 
 void printGameLevels(int selectedLevel)
@@ -1145,7 +1178,7 @@ void printGameLevels(int selectedLevel)
 	}
 }
 
-void game()
+void game(string name)
 {
 	// By default you are hovering the first level
 	int selectedLevel = 0;
@@ -1198,43 +1231,38 @@ void game()
 				// Fourth level
 			case 3:
 				clearGameScreen();
-				fourthLevel();
+				fourthLevel(name);
+				exitStatement = false;
 				break;
 
 				// Fifth level
 			case 4:
 				clearGameScreen();
-				fifthLevel();
 				break;
 
 				// Sixth level
 			case 5:
 				clearGameScreen();
-				sixthLevel();
 				break;
 
 				// Seventh level
 			case 6:
 				clearGameScreen();
-				seventhLevel();
 				break;
 
 				// Eigth level
 			case 7:
 				clearGameScreen();
-				eighthLevel();
 				break;
 
 				// Nineth level
 			case 8:
 				clearGameScreen();
-				ninethLevel();
 				break;
 
 				// Tenth level
 			case 9:
 				clearGameScreen();
-				tenthLevel();
 				break;
 
 			default:
@@ -1268,6 +1296,43 @@ void printMenuOptions(string menuOptions[], int selectedOption, string name)
 	}
 }
 
+void rules()
+{
+	printGameBoard();
+	printKeyboard();
+
+	outputPosition(8, 6);
+	cout << "RULES";
+
+	outputPosition(8, 8);
+	cout << "You can move using the ";
+	outputPosition(8, 9);
+	cout << "arrow keys and choosing by";
+	outputPosition(8, 10);
+	cout << "pressing Enter.";
+
+	outputPosition(8, 11);
+	cout << "You can look at the lessons";
+
+	outputPosition(8, 12);
+	cout << "as much as you want.";
+
+	outputPosition(8, 13);
+	cout << "By pressing Enter on the";
+
+	outputPosition(8, 14);
+	cout << "lessons you are entering";
+	outputPosition(8, 15);
+	cout << "a test";
+
+	char pressedKey = ' ';
+	outputPosition(8, 17);
+	cout << "Press any key to exit";
+
+	pressedKey = _getch();
+}
+
+
 void mainMenu(string menuOptions[], string name)
 {
 	// By default when you open the game you are hovering the first option
@@ -1278,10 +1343,9 @@ void mainMenu(string menuOptions[], string name)
 	printGameBoard();
 	printKeyboard();
 
-	printMenuOptions(menuOptions, selectedOption, name);
-
 	while (exitStatement)
 	{
+		printMenuOptions(menuOptions, selectedOption, name);
 		pressedKey = _getch();
 
 		// Moving up through the menu
@@ -1306,19 +1370,22 @@ void mainMenu(string menuOptions[], string name)
 				// Start game
 			case 0:
 				clearGameScreen();
-				game();
+				game(name);
+				exitStatement = false;
 				break;
 
 				// Rules
 			case 1:
 				clearGameScreen();
-				cout << "Rules";
+				rules();
+				clearGameScreen();
 				break;
 
 				// Exit
 			case 2:
+
 				exitStatement = false;
-				clearGameScreen();
+				system("CLS");
 				cout << "Press any key to exit";
 				break;
 
